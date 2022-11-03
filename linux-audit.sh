@@ -6,7 +6,6 @@ echo "系统内核"
 uname -a
 echo "系统UMASK值"
 more /etc/profile | grep umask
-echo "----------------------------------------------------------------"
 echo "系统密码文件修改时间"
 ls -ltr /etc/passwd
 echo '系统最近登录信息'
