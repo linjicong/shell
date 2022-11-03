@@ -5,9 +5,7 @@ cat /etc/redhat-release
 echo "系统内核"
 uname -a
 echo "系统UMASK值"
-more /etc/profile | grep umask
-echo "系统密码文件修改时间"
-ls -ltr /etc/passwd
+more /etc/profile | grep "umask"
 echo '系统最近登录信息'
 last
 #echo "系统时间"
@@ -55,8 +53,6 @@ more /etc/login.defs | grep -E "PASS_WARN_AGE" | grep -v "#" |awk -F' '  '{if($2
 echo '---------------------------PAM模块---------------------------：'
 echo 'cat /etc/pam.d/system.auth'
 cat /etc/pam.d/system.auth
-echo 'cat /etc/pam.d/system-auth'
-cat /etc/pam.d/system-auth
 echo 'cat /etc/pam.conf'
 cat /etc/pam.conf
 echo 'cat /etc/pam.d/login'
