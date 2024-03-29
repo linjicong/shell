@@ -13,6 +13,7 @@
 #### 使用说明
 
 1.  curl -sSL https://gitee.com/linjicong/shell/raw/master/linux-audit.sh | bash
+1.  curl -sSL https://gitee.com/linjicong/shell/raw/master/init-almalinux.sh | bash
 
 #### 参与贡献
 
